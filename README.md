@@ -37,9 +37,8 @@ console.log(result); // Output: 'It is five!'
 import { Switcher } from 'ts-switcher';
 
 const result = Switcher.switch(5)
-.caseOr((x) => x > 10)
-.caseAnd((x) => x < 10)
-.then(() => 'Number is less than 10')
+.caseOr((x) => x == 10).or((x) => x == 3).then(() => "3 or 10")
+.caseAnd((x) => x < 10).then(() => 'Number is less than 10')
 .default(() => 'Default case')
 .out();
 
