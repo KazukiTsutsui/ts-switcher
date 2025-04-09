@@ -12,7 +12,7 @@ A TypeScript library that provides a flexible and easy-to-use switch-case mechan
 ## Installation
 
 ```bash
-npm install switcher-library
+npm install ts-switcher
 ```
 
 # Usage
@@ -20,7 +20,7 @@ npm install switcher-library
 ## Basic Example
 
 ```
-import { Switcher } from 'switcher-library';
+import { Switcher } from 'ts-switcher';
 
 const result = Switcher.switch(5)
 .case((x) => x === 5, () => 'It is five!')
@@ -34,7 +34,7 @@ console.log(result); // Output: 'It is five!'
 ## Using caseOr and caseAnd
 
 ```
-import { Switcher } from 'switcher-library';
+import { Switcher } from 'ts-switcher';
 
 const result = Switcher.switch(5)
 .caseOr((x) => x > 10)
